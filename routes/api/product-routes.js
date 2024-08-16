@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
+// The `/api/products` endpoint
+
 //Getting all products including product category and it's tag
 router.get('/', async(req, res) => {
   try{
